@@ -1,0 +1,25 @@
+{
+  "name": "next-office",
+  "productName": "Next Office",
+  "version": "0.1.0",
+  "description": "한컴오피스 없이 HWP·HWPX 문서를 열고 고친 뒤 연 형식 그대로 저장하는 한글 편집기",
+  "license": "Apache-2.0",
+  "private": true,
+  "type": "module",
+  "main": "src/main/main.js",
+  "scripts": {
+    "setup:studio": "node scripts/build-studio.mjs",
+    "start": "electron .",
+    "make:blank": "node scripts/make-blank.mjs",
+    "test": "node --test \"tests/**/*.test.js\"",
+    "smoke": "node scripts/smoke-test.mjs"
+  },
+  "dependencies": {
+    "@rhwp/core": "0.8.7",
+    "@rhwp/editor": "0.8.7",
+    "cfb": "1.2.2"
+  },
+  "devDependencies": {
+    "electron": "^45.2.2"
+  }
+}
