@@ -1,0 +1,10 @@
+node_modules/
+# 빌드 때 받아 만드는 것 (npm run setup:studio)
+.cache/
+vendor/studio/
+# 실행·빌드 산출물
+out/
+dist/
+*.log
+.env
+.env.*
